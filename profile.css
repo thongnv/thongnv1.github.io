@@ -1,6 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
+	font-family: monospace;
 }
 
 hr {
@@ -25,6 +26,11 @@ hr {
     background-image: url(http://vnreview.vn/image/16/88/91/1688912.jpg);
 }
 
+.banner-bottom {
+	border-bottom: 1px solid rgba(0,0,0,.05);
+    padding-bottom: 10px;
+}
+
 .align-center {
 	margin: 0 auto;
 }
@@ -45,10 +51,15 @@ hr {
     border-radius: 75px;
 }
 
+.name {
+	font-size: 32px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
 .job-title {
 	padding-bottom: 10px;
-    font-size: 30px;
-    font-family: monospace;
+    font-size: 20px;
 }
 
 .center {
@@ -56,20 +67,16 @@ hr {
 }
 
 .location {
-
+	font-size: 16px;
 }
 
 .description-top {
     font-size: 18px;
-    font-family: monospace;
+    padding: 10px;
 }
 
 .body {
 	padding: 20px;
-}
-
-.body hr {
-	width: 100%;
 }
 
 .title {
@@ -79,12 +86,31 @@ hr {
     margin-bottom: 20px;
 }
 
+.job-wrap {
+	display: flex;
+	padding: 10px;
+}
+
+.logo-wrap {
+	width: 11%;
+}
+
 .logo {
 	background-image: url(http://static.ybox.vn/2017/4/25/8db52e16-2961-11e7-a841-56c566ee3692.jpg);
 	width: 100px;
 	height: 100px;	
+    margin-top: 5px;
 	background-size: cover;
     background-position: center;
+}
+
+.description > ul {
+    list-style: none;
+    padding: 0;
+}
+
+.edu-wrap {
+	height: 150px;
 }
 
 .circle-logo {
@@ -132,12 +158,72 @@ hr {
 	font-weight: bold;
 } 
 
+.align-content-center {
+	margin: 0 auto;
+}
+
+.float-left {
+	float: left;
+}
+
+.flex {
+	display: flex;
+}
+
+.edu-content {
+    display: inline;
+    float: left;
+    width: 66%;
+    padding: 10px;
+}
+
+.left-logo {
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    float: left;
+}
+
+.u-name {
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+.field-name {
+	padding-top: 5px;
+	font-size: 14px;
+}
+
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
 	.skills-wrap {
 		display: block;
+	}
+
+	.banner-top {
+	    height: 300px;
+	}
+
+	.avatar {
+    	height: 200px;
+	    width: 200px;
+	    border-radius: 100px;
+	    margin-top: -100px;
+	}
+
+	.title {
+	    display: block;
+	    font-size: 30px;
+	    font-weight: 500;
+	    margin-bottom: 20px;
+	    text-align: center;
+	}
+
+	.logo {
+		width: 200px;
+    	height: 200px;
 	}
 }
 
